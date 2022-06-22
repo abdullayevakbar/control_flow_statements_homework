@@ -1,4 +1,4 @@
-def main(a,b,c):
+def main(a, b, c):
     """
     Find how many positive and how many negative numbers there are in the given numbers.
     check the following conditions:
@@ -13,4 +13,21 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    s = 0
+    if(a < 0):
+        s += 1
+    if(b < 0):
+        s += 1
+    if(c < 0):
+        s += 1
+
+    s1 = 0
+    if(a > 0):
+        s1 += 1
+    if(b > 0):
+        s1 += 1
+    if(c > 0):
+        s1 += 1
+    if(s < s1):
+        return "there are a lot of negative numbers"
+    return "there are a lot of positive numbers"

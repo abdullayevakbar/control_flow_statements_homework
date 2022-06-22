@@ -1,3 +1,6 @@
+import re
+
+
 def main(a):
     """
     Given an integer a, check the following conditions:
@@ -11,4 +14,10 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if(a//100 == 0):
+        if(a % 2 == 1):
+            return "two-digit odd number"
+        return "two-digit even number"
+    if(a % 2 == 1):
+        return "three-digit odd number"
+    return "three-digit even number"
